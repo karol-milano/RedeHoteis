@@ -1,0 +1,408 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"_S",
+				"_SESSION"
+			],
+			[
+				"array_p",
+				"array_push"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/projetos/Rede Hoteis/App/Models/Hotel.php",
+			"settings":
+			{
+				"buffer_size": 166,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/projetos/Rede Hoteis/App/Connection.php",
+			"settings":
+			{
+				"buffer_size": 290,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/projetos/Rede Hoteis/readme.txt",
+			"settings":
+			{
+				"buffer_size": 72,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ident",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"iden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/projetos/Rede Hoteis",
+		"/C/projetos/Rede Hoteis/App",
+		"/C/projetos/Rede Hoteis/App/Models"
+	],
+	"file_history":
+	[
+		"/C/projetos/Rede Hoteis/public/index.php",
+		"/C/projetos/Rede Hoteis/public/RedeHoteis.sublime-project",
+		"/C/xampp/htdocs/ProgWeb-Hospedagem-master (2)/ProgWeb-Hospedagem-master/view/editarCliente.php",
+		"/C/xampp/phpMyAdmin/libraries/config.default.php",
+		"/C/xampp/htdocs/teste/view/cadastroCliente.php",
+		"/C/xampp/htdocs/teste/view/index.php",
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/C/projetos/miniframework/App/Connection.php",
+		"/C/Users/karol/Downloads/miniframework (4)/miniframework/App/Connection.php",
+		"/C/projetos/miniframework/readme.txt",
+		"/C/projetos/miniframework/vendor/composer/LICENSE",
+		"/C/projetos/miniframework/App/Route.php",
+		"/C/projetos/miniframework/App/Controllers/IndexController.php",
+		"/C/projetos/miniframework/App/Views/index/contato.phtml",
+		"/C/projetos/miniframework/App/Views/index/sobreNos.phtml",
+		"/C/projetos/miniframework/public/css/index.css",
+		"/C/projetos/miniframework/App/Views/index/index.phtml",
+		"/C/projetos/miniframework/App/Views/index/sobre.php",
+		"/C/projetos/miniframework/App/Views/shared/cabecalho.php",
+		"/C/projetos/miniframework/App/Views/index/index.php",
+		"/C/projetos/miniframework/App/Views/cliente/cadastroCliente.phtml",
+		"/C/projetos/miniframework/App/Views/cliente/loginCliente.phtml",
+		"/C/projetos/miniframework/App/Views/layout1.phtml",
+		"/C/projetos/miniframework/App/Controllers/ClienteController.php",
+		"/C/projetos/miniframework/public/css/cadastroCliente.css",
+		"/C/projetos/miniframework/App/Controllers/HotelController.php",
+		"/C/projetos/miniframework/vendor/RH/Controller/Action.php",
+		"/C/projetos/miniframework/vendor/RH/Init/Bootstrap.php",
+		"/C/projetos/miniframework/App/Views/cliente/loginCliente",
+		"/C/xampp/htdocs/teste/view/login.php",
+		"/C/projetos/miniframework/App/Views/hotel/cadastroHotel.phtml",
+		"/C/xampp/htdocs/teste/view/cadastroHotel.php",
+		"/C/projetos/miniframework/public/index.php",
+		"/C/projetos/miniframework/App/Controllers/ClientController.php",
+		"/C/Users/karol/Downloads/cadastroCliente.phtml",
+		"/C/projetos/miniframework/App/Views/index/desktop.ini",
+		"/C/projetos/miniframework/public/.htaccess",
+		"/C/projetos/miniframework/public/cliente/cadastroCliente.phtml",
+		"/C/projetos/miniframework/App/Views/index/index.css",
+		"/C/xampp/htdocs/Trabalho1/starter-template/index.html",
+		"/C/projetos/miniframework/App/Views/shared/rodape.php",
+		"/C/projetos/miniframework/App/Views/css/index.css",
+		"/C/Users/karol/OneDrive/Área de Trabalho/miniframework (2)/miniframework/vendor/MF/Controller/Action.php",
+		"/C/Users/karol/OneDrive/Área de Trabalho/miniframework (2)/miniframework/public/index.php",
+		"/C/Users/karol/OneDrive/Área de Trabalho/miniframework (2)/miniframework/App/Views/layout1.phtml",
+		"/C/Users/karol/OneDrive/Área de Trabalho/miniframework (2)/miniframework/App/Controllers/IndexController.php",
+		"/C/projetos/miniframework/composer.json",
+		"/C/Users/karol/OneDrive/Área de Trabalho/ProgWeb-Hospedagem-master/view/cadastroCliente.php",
+		"/C/Users/karol/OneDrive/Área de Trabalho/miniframework (1)/miniframework/App/Controllers/IndexController.php",
+		"/C/Users/karol/Downloads/miniframework/composer.json",
+		"/C/projetos/miniframework/vendor/composer/autoload_classmap.php",
+		"/C/projetos/miniframework/vendor/composer/autoload_namespaces.php",
+		"/C/projetos/miniframework/composer.jason",
+		"/C/projetos/miniframework/composer.phar",
+		"/C/Users/karol/Downloads/miniframework/composer.phar",
+		"/C/projetos/miniframework/public/composer.jason",
+		"/C/xampp/htdocs/Trabalho1/starter-template/css/materialize.css",
+		"/C/xampp/htdocs/historico/HistoricoController.php",
+		"/C/xampp/htdocs/historico/pagina.php",
+		"/C/xampp/htdocs/historico/index.php",
+		"/C/xampp/htdocs/historico/destroy.php",
+		"/C/xampp/htdocs/historico/Historico.php",
+		"/C/xampp/htdocs/historico/pagina2.php",
+		"/C/xampp/htdocs/Nova pasta/HistoricoController.php",
+		"/C/xampp/htdocs/pratica_params/index.php",
+		"/C/Users/karol/Downloads/index.php",
+		"/C/xampp/htdocs/Nova pasta/destroy.php",
+		"/C/xampp/htdocs/Nova pasta/index.php",
+		"/C/xampp/htdocs/Atividade6/login.php",
+		"/C/xampp/htdocs/Atividade6/form+Senha/formulario.html",
+		"/C/xampp/htdocs/Atividade6/formulario.html",
+		"/C/xampp/htdocs/progweb/index.php",
+		"/C/xampp/htdocs/Atividade6/form+Senha.zip",
+		"/C/xampp/htdocs/progweb/aluno.php",
+		"/C/xampp/htdocs/progweb/disciplinas.php",
+		"/C/xampp/htdocs/progweb/professor.php",
+		"/C/Users/karol/OneDrive/Área de Trabalho/ProgWeb/atividade 04/FACOMTUBE.html",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/xampp/htdocs/Nova pasta/dashboard/pt_br/index.html",
+		"/C/xampp/htdocs/Nova pasta/dashboard/zh_cn/index.html",
+		"/C/wamp/www/index.php",
+		"/C/xampp/htdocs/index.php",
+		"/C/xampp/htdocs/dashboard/index.html",
+		"/C/xampp/htdocs/Aula1/Index.php",
+		"/C/xampplite/htdocs/progweb/index.php",
+		"/C/xampplite/htdocs/index.php",
+		"/C/xampp/htdocs/progweb/header.php",
+		"/C/Users/karol/OneDrive/Área de Trabalho/ProgWeb/atividade 02/formulario.html",
+		"/C/Users/karol/OneDrive/Área de Trabalho/ProgWeb/atividade 04/estilo.css",
+		"/C/Users/karol/OneDrive/Área de Trabalho/ProgWeb/atividade 02/estilo.css",
+		"/C/Users/karol/OneDrive/Área de Trabalho/ProgWeb/atividade 02/login.html",
+		"/C/Users/karol/OneDrive/Área de Trabalho/ProgWeb/atividade 02/estilo",
+		"/C/wamp/www/Aula1/Index.php",
+		"/C/wamp/apps/phpmyadmin3.2.0.1/config.inc.php",
+		"/C/Users/karol/OneDrive/Área de Trabalho/trabalho.html",
+		"/C/Users/karol/OneDrive/Área de Trabalho/Teste/exemplo1.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$cfg['ExecTimeLimit']",
+			"Pagina",
+			"pagina",
+			"Pagina",
+			"$supres",
+			"true",
+			"localhost",
+			"It works!"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/projetos/Rede Hoteis/App/Models/Hotel.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/projetos/Rede Hoteis/App/Connection.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								181
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/projetos/Rede Hoteis/readme.txt",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 72,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "RedeHoteis.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 317.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

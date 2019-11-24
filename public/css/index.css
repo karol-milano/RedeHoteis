@@ -1,0 +1,82 @@
+.titulo{
+    position: absolute;
+    opacity: 0.7;
+    font-size: 100px;
+    color: white;
+    left: 37%;
+    right: 20%;
+    top: 150px;
+}
+
+.label{
+	font-size: 15px ;
+}
+
+.carousel-inner{
+	width:100%;
+	height: 500px !important;
+}
+
+.mensagem-topo{
+    position: absolute;
+    color: white;
+    opacity: 10;
+    left: 18%;
+    top: 40%;
+    font-size:80px;   
+}
+
+.hotel{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.hoteis{
+    margin-left: 10%;
+    margin-right: 5%;
+    border-radius: 10px;
+}
+
+.imagem-hotel{
+    border-radius: 10px;
+    height: 500px;
+}
+
+body {
+    background-color: bisque;
+}
+
+.cards {
+    height: 250px;
+}
+
+.cards i {
+    font-size: 50px;
+}
+
+.cards p {
+    font-size: 20px;
+}
+
+.form{
+    position: absolute;
+    top: 10%;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 15px;
+}
+
+.div-input{
+    position: absolute;
+    font-size:20px ;
+    color: white;
+    left: 28%;
+    right: 10%;
+    top: 290px;
+}
+
+/* Fixes dropdown menus placed on the right side */
+.ml-auto .dropdown-menu {
+    left: auto !important;
+    right: 0px;
+}
