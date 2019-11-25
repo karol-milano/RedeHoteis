@@ -49,17 +49,17 @@ class HotelController extends Action {
             $imagem2    = '';
             $imagem3    = '';
 
-            if (isset($_FILES['imagem1'])) {
+            if (isset($_FILES['imagem1']) && isset($_FILES['imagem1']['name'])) {
                 $fileExtension = strtolower(end(explode(".", $_FILES['imagem1']['name'])));
                 $imagem1 = md5(time() . $_FILES['imagem1']['name']) . '.' . $fileExtension;
             }
 
-            if (isset($_FILES['imagem2'])) {
+            if (isset($_FILES['imagem2']) && isset($_FILES['imagem2']['name'])) {
                 $fileExtension = strtolower(end(explode(".", $_FILES['imagem2']['name'])));
                 $imagem2 = md5(time() . $_FILES['imagem2']['name']) . '.' . $fileExtension;
             }
 
-            if (isset($_FILES['imagem3'])) {
+            if (isset($_FILES['imagem3']) && isset($_FILES['imagem3']['name'])) {
                 $fileExtension = strtolower(end(explode(".", $_FILES['imagem3']['name'])));
                 $imagem3 = md5(time() . $_FILES['imagem3']['name']) . '.' . $fileExtension;
             }
@@ -151,7 +151,7 @@ class HotelController extends Action {
                 $hotel->atualizarHotel($id, $nomeHotel, $cnpj, $telefone, $pais, $estado, $cidade, $bairro, $rua, $numero, $cep, $email, $senha, $descricao, $imagem1, $imagem2, $imagem3);
 
 
-                $diretorio = '../public/storage/'.$Id.'/';
+                $diretorio = '../public/storage/'.$id.'/';
 
                 if (isset($_FILES['imagem1']['tmp_name'])) {
                     move_uploaded_file($_FILES['imagem1']['tmp_name'], $diretorio.$imagem1);

@@ -111,10 +111,36 @@
 
     <div class="row">
       <div class= "form-group col-md-12">
-        <label for="exampleInputEmail1">Adicione até 3 Imagens</label>
-        <input class="form-control" id="imagem1" name="imagem1" type="file" accept="image/*" />
-        <input class="form-control" id="imagem2" name="imagem2" type="file" accept="image/*" />
-        <input class="form-control" id="imagem3" name="imagem3" type="file" accept="image/*" />
+        <div class="mt-3">
+        <?php
+        if (isset($imagem1) && $imagem1 != "") {
+        ?>
+          <img src="/storage/<?=$id;?>/<?=$imagem1;?>" class="d-block imagem-hotel">
+        <?php
+        }
+        ?>
+          <input class="form-control" id="imagem1" name="imagem1" type="file" accept="image/*" />
+        </div>
+        <div class="mt-3">
+        <?php
+        if (isset($imagem2) && $imagem2 != "") {
+        ?>
+          <img src="/storage/<?=$id;?>/<?=$imagem2;?>" class="d-block imagem-hotel">
+        <?php
+        }
+        ?>
+          <input class="form-control" id="imagem2" name="imagem2" type="file" accept="image/*" />
+        </div>
+        <div class="mt-3">
+        <?php
+        if (isset($imagem3) && $imagem3 != "") {
+        ?>
+          <img src="/storage/<?=$id;?>/<?=$imagem3;?>" class="d-block imagem-hotel">
+        <?php
+        }
+        ?>
+          <input class="form-control" id="imagem3" name="imagem3" type="file" accept="image/*" />
+        </div>
       </div>
     </div>
 

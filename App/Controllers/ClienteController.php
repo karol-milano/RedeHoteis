@@ -63,6 +63,60 @@ class ClienteController extends Action {
 		}
 	}
 
+	public function editarCliente() {
+
+		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+			$response = array(
+				'status' => '',
+				'mensagem' => ''
+			);
+
+			$id 			= $_POST['id'];
+			$nome 			= $_POST['nome'];
+			$cpf 			= $_POST['cpf'];
+			$celular 		= $_POST['celular'];
+			$telefone 		= $_POST['telefone'];
+			$dt_nascimento 	= $_POST['dt_nascimento'];
+			$tp_logradouro 	= $_POST['tp_logradouro'];
+			$logradouro 	= $_POST['logradouro'];
+			$numero 		= $_POST['numero'];
+			$bairro 		= $_POST['bairro'];
+			$complemento 	= $_POST['complemento'];
+			$cidade 		= $_POST['cidade'];
+			$estado 		= $_POST['estado'];
+			$cep 			= $_POST['cep'];
+			$pais 			= $_POST['pais'];
+			$email 			= $_POST['email'];
+			$senha 			= $_POST['senha'];
+
+			try {
+				$cliente = Container::getModel('Cliente');
+				$cliente->editarCliente($id, $nome, $cpf, $celular, $telefone, $dt_nascimento, $tp_logradouro, $logradouro, $numero, $bairro, $complemento, $cidade, $estado, $cep, $pais, $email, $senha);
+
+            	$response['status'] = 'ok';
+				$response['mensagem'] = '';
+			} catch (\PDOException $e) {
+				error_log($e->getCode(), $e->getMessage());
+
+				$response['status'] = 'error';
+				if (((int)$e->getCode()) == 23000) {					
+					$response['mensagem'] = "E-mail já cadastrado.";
+				}
+				else {
+					$response['mensagem'] = $e->getMessage();
+				}
+			}
+
+			echo json_encode($response);
+		}
+		else {
+			$cliente = Container::getModel('Cliente')->getClienteById($_GET['clienteId']);
+            $this->view->dados = $cliente;
+			$this->render('editarCliente', 'layout1');
+		}
+	}
+
 	public function loginCliente() {
 
 		if ($_SERVER['REQUEST_METHOD'] === 'POST') {

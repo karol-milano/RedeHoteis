@@ -27,6 +27,12 @@ class Routes extends Bootstrap{
             'action' =>'cadastrarCliente'
         );
 
+        $routes['editarCliente'] = array(
+            'route' =>'/editarCliente',
+            'controller' =>'ClienteController',
+            'action' =>'editarCliente'
+        );
+
         $routes['loginCliente'] = array(
             'route' =>'/loginCliente',
             'controller' =>'ClienteController',

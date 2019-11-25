@@ -62,7 +62,7 @@ session_start();
           Bem vindo(a), <?= $_SESSION['hotelNome']; ?>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a id="btnLogout" href="/editarHotel" class="dropdown-item">
+            <a id="btnLogout" href="/editarHotel?hotelId=<?= $_SESSION['hotelId']; ?>" class="dropdown-item">
               <i class="material-icons">edit</i>Editar hotel
             </a>
             <a id="btnLogout" href="/logoutHotel" class="dropdown-item">
@@ -79,7 +79,7 @@ session_start();
           Bem vindo(a), <?=preg_split("/\s/", $_SESSION['clienteNome'])[0];?>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a id="btnLogout" href="/editarCliente" class="dropdown-item">
+            <a id="btnLogout" href="/editarCliente?clienteId=<?= $_SESSION['clienteId']; ?>" class="dropdown-item">
               <i class="material-icons">edit</i>Editar cadastro
             </a>
             <a id="btnLogout" href="/logoutCliente" class="dropdown-item">
