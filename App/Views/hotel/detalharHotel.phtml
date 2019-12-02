@@ -141,7 +141,7 @@ $('#solicitarReserva').click(function (event) {
 
     $.post("/reservarHotel", dataSent, function( data ) {
         console.log("reservarHotel");
-        console.log(JSON.parse(data));
+        console.log(data);
 
         if (JSON.parse(data).status == 'ok') {
             alert("Um e-mail foi encaminhado ao hotel com a solicitação de reserva.\nAguarde o contato do hotel.");

@@ -69,14 +69,30 @@ class Hotel extends Model {
 			'numero'	=> $numero,
 			'cep'		=> $cep,
 			'email'		=> $email,
-			'imagem1'	=> $imagem1,
-			'imagem2'	=> $imagem2,
-			'imagem3'	=> $imagem3,
 			'descricao'	=> $descricao,
 			'senha'		=> $senha
 		);
 
-		$this->db->prepare("UPDATE hotel SET nomeHotel = :nomeHotel, telefone = :telefone, cnpj = :cnpj, pais = :pais,cidade = :cidade, estado = :estado, bairro = :bairro, rua = :rua,numero = :numero, cep = :cep, email = :email, imagem1 = :imagem1, imagem2 = :imagem2, imagem3 = :imagem3, descricao = :descricao, senha = :senha WHERE id = :id")
+		$str = "UPDATE hotel SET nomeHotel = :nomeHotel, telefone = :telefone, cnpj = :cnpj, pais = :pais,cidade = :cidade, estado = :estado, bairro = :bairro, rua = :rua,numero = :numero, cep = :cep, email = :email, descricao = :descricao, senha = :senha";
+
+		if ($imagem1 != null) {
+			$dadosHotel['imagem1'] = $imagem1;
+			$str .=  ", imagem1 = :imagem1";
+		}
+
+		if ($imagem2 != null) {
+			$dadosHotel['imagem2'] = $imagem2;
+			$str .=  ", imagem2 = :imagem2";
+		}
+
+		if ($imagem3 != null) {
+			$dadosHotel['imagem3'] = $imagem3;
+			$str .=  ", imagem3 = :imagem3";
+		}
+
+		$str .=  " WHERE id = :id";
+
+		$this->db->prepare($str)
 		->execute($dadosHotel);
 	}
 

@@ -127,21 +127,23 @@ class HotelController extends Action {
             $email      = $_POST['email'];
             $senha      = $_POST['senha'];
             $descricao  = $_POST['descricao'];
-            $imagem1    = '';
-            $imagem2    = '';
-            $imagem3    = '';
+            $imagem1    = null;
+            $imagem2    = null;
+            $imagem3    = null;
 
-            if (isset($_FILES['imagem1'])) {
+            if (isset($_FILES['imagem1']['name']) && $_FILES['imagem1']['name'] != "") {
                 $fileExtension = strtolower(end(explode(".", $_FILES['imagem1']['name'])));
                 $imagem1 = md5(time() . $_FILES['imagem1']['name']) . '.' . $fileExtension;
             }
 
-            if (isset($_FILES['imagem2'])) {
+            if (isset($_FILES['imagem2']['name']) && $_FILES['imagem2']['name'] != "") {
                 $fileExtension = strtolower(end(explode(".", $_FILES['imagem2']['name'])));
                 $imagem2 = md5(time() . $_FILES['imagem2']['name']) . '.' . $fileExtension;
             }
 
-            if (isset($_FILES['imagem3'])) {
+            $response = $_FILES;
+
+            if (isset($_FILES['imagem3']['name']) && $_FILES['imagem3']['name'] != "") {
                 $fileExtension = strtolower(end(explode(".", $_FILES['imagem3']['name'])));
                 $imagem3 = md5(time() . $_FILES['imagem3']['name']) . '.' . $fileExtension;
             }
@@ -153,15 +155,15 @@ class HotelController extends Action {
 
                 $diretorio = '../public/storage/'.$id.'/';
 
-                if (isset($_FILES['imagem1']['tmp_name'])) {
+                if ($imagem1 != null) {
                     move_uploaded_file($_FILES['imagem1']['tmp_name'], $diretorio.$imagem1);
                 }
 
-                if (isset($_FILES['imagem2']['tmp_name'])) {
+                if ($imagem2 != null) {
                     move_uploaded_file($_FILES['imagem2']['tmp_name'], $diretorio.$imagem2);
                 }
 
-                if (isset($_FILES['imagem3']['tmp_name'])) {
+                if ($imagem3 != null) {
                     move_uploaded_file($_FILES['imagem3']['tmp_name'], $diretorio.$imagem3);
                 }
 
@@ -195,41 +197,31 @@ class HotelController extends Action {
 
     public function reservarHotel() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
             if (isset($_POST['hotel'])) {
                 $response = array(
                     'status' => '',
                     'mensagem' => ''
                 );
-
                 $hotel = $_POST['hotel'];
-
                 $from = "redehoteis@redehoteis.com";
                 $to = $hotel['email'];
                 $subject = "Reserva de quarto";
                 $mensagem = "<p>À<br />" . $hotel['nomeHotel'] . " , </p>
                             <p>Venho por meio desta solicitar a reserva de um quarto de casal";
-
                 $epoca = "";
                 if (isset($_POST['entrada'])) {
                     $epoca = "com entrada em " . $_POST['entrada'];
-
                     if (isset($_POST['saida'])) {
                         $epoca .= " e saída em " . $_POST['saida'];
                     }
                 }
-
                 $mensagem .= $epoca . ".</p>";
-
                 $mensagem .= "<p>Solicito ser comunicado da confirmação desta reserva, assim como de quais são os dados necessários e quais os valores e formas de pagamento.</p>";
-
                 $mensagem .= "<p>Atenciosamente,</p><br />";
                 $mensagem .= "<p>" . $_SESSION['clienteNome'] . "</p>";
                 $mensagem .= "<p>E-mail: " . $_SESSION['clienteEmail'] . "</p>";
                 $mensagem .= "<p>Telefone: " . $_SESSION['clienteCelular'] . "</p>";
-
                 $headers = "From:" . $from;
-
                 $response['status'] = "error";
                 if (mail($to, $subject, $mensagem, $headers)) {
                     $response['status'] = "ok";
@@ -237,7 +229,6 @@ class HotelController extends Action {
                 else {
                     $response['mensagem'] = "Erro ao enviar e-mail.";
                 }
-
                 echo json_encode($response);
             }
         }
